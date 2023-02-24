@@ -4,8 +4,10 @@ class TelaPython():
     def __init__(self):
         #layout
         layout = [
-            [sg.Text('Nome'),sg.Input()],
-            [sg.Text('Idade'),sg.Input()],
+            [sg.Text('Nome',size=(5,0)),sg.Input(size=(20,0))],
+            [sg.Text('Idade',size=(5,0)),sg.Input(size=(20,0))],
+            [sg.Text('Quais provedores de e-mail são aceitos?')],
+            [sg.Checkbox('Gmail'),sg.Checkbox('Outlook'),sg.Checkbox("Yahoo")],
             [sg.Button('Enviar')]
         ]
         #janela
