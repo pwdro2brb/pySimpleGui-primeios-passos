@@ -10,7 +10,8 @@ class TelaPython():
             [sg.Checkbox('Gmail',key='Gmail'),sg.Checkbox('Outlook',key='Outlook'),sg.Checkbox("Yahoo",key='Yahoo')],
             [sg.Text('Aceita cartão?')],
             [sg.Radio('sim','cartões',key='Aceita Cartão'),sg.Radio('Não','cartões',key='Não Aceita Cartão')],
-            [sg.Button('Enviar')]
+            [sg.Button('Enviar')],
+            [sg.Output(size=(30,20))]#gera a informação na tela sem ir no terminal 
         ]
         #janela
         self.janela = sg.Window("Dados do usuário").layout(layout)
@@ -39,3 +40,4 @@ class TelaPython():
 
 tela = TelaPython()
 tela.Iniciar()
+
